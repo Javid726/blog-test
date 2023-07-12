@@ -1,0 +1,23 @@
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.list {
+  display: flex;
+  gap: 25px;
+  margin-left: 250px;
+}
+
+.list-item {
+  color: #807575;
+  font-weight: 600;
+  font-size: 18px;
+  list-style-type: none;
+}

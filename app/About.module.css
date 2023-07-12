@@ -1,0 +1,44 @@
+.about {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.about__subheader {
+  margin-bottom: 5px;
+  font-size: 22px;
+  color: #000;
+}
+
+.about__paragraph {
+  line-height: 1.25;
+  font-size: 18px;
+}
+
+.cv__link {
+  /* background-color: #f582ae; */
+  /* color: #f1f1f1; */
+  position: relative;
+  text-decoration: none;
+}
+
+.cv__link::before {
+  content: '';
+  display: block;
+  height: 1rem;
+  position: absolute;
+  top: 45%;
+  right: -0.15rem;
+  left: -0.1rem;
+  z-index: -1;
+  background-color: #f2b4cc;
+  transform: translateY(0%) rotateZ(-3deg);
+  transition: background-color var(--link-transition),
+    transform var(--link-transition);
+}
+
+.cv__link:hover::before {
+  background-color: #f582ae;
+  transform: translateY(-50%) rotateZ(-1deg) scaleY(2);
+}
